@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&display=swap');
+*{
+    font-family: 'Source Serif Pro', serif;
+}
+body{
+    background-image: radial-gradient(circle, white,rgb(190, 245, 255),rgb(0, 200, 255));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+}
+.garis_tepi1 {
+    border: 3px solid black;
+    margin: auto;
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 2px rgba(71, 69, 69, 0.8);
+    padding: 10px;
+    width:650px;
+    height: 700px;
+}
+.judul{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Source Serif Pro', serif;
+    color: rgb(0, 200, 255);
+}
+.label{
+    margin-left: 66px;
+    margin-top: 20px;
+}
+.input{
+    margin-left: 15px;
+    background-color: rgb(190, 245, 255);
+    border-radius: 10px;
+    padding: 4px 20px;   
+}
+textarea {
+    width: 500px;
+    height: 100px;
+    padding: 10px;
+    font-size: 14px;
+    background-color: rgb(190, 245, 255);
+    border-radius: 10px;
+}
+.button{
+    background-color: rgb(10, 209, 10);
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 35px;
+    display: block;
+    margin: auto;
+    margin-top: 80px;
+}
+.button_teks{
+    font-size: 25px;
+}

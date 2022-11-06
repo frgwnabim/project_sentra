@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Pendaftaran Event Pameran Lego</title>
+    <style>
+        div .penutup1{
+        opacity:50%;
+            }
+    h1{
+        text-align: center;
+        margin: auto;
+        font-family:sans-serif ;
+        color: rgb(0, 0, 0);
+        text-shadow:4px 4px 4px rgb(110, 110, 110);
+        font-size: 40px;
+        }
+        .judul_utama{
+            display: absolute;
+            margin: auto;
+            text-align: center;
+            padding-bottom: 25px;
+            padding-top: -10px;
+        }
+    body{
+            background-image: linear-gradient(rgb(0, 200, 255), rgb(190, 245, 255),white, white, white);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100%;
+        }
+    h4 .kitas {
+            color: aliceblue;
+        }
+    p{
+            font-family: Verdana;
+            font-size: 20px;
+            margin-left: 5px;
+            font-weight: bold;
+        }
+    form{
+        margin-top: 30px;
+    }
+        .teks{
+            font-size: 25px;
+            opacity: 90%;
+            margin-left: 75px;
+            color: rgb(0, 0, 0);
+        }
+        .kontak{
+            margin-left: 70px;
+            display: flex;
+        }
+    a{
+        text-decoration: none;
+        padding-left: 3px;
+        padding-right: 3px;
+        padding-top: -10px;
+    }
+    form{
+        padding: 20px 0;
+    }
+        .label{
+            margin-left: 80px;
+            border-radius: 10px;
+            padding: 10px 0;
+            border-style: ;
+        }
+        .label_dalam{
+            border-style: solid;
+            border-radius: 10px;
+            padding: 5px 10px;
+            background-color: rgb(220, 220, 220);
+        }
+        .umur{
+            font-size: 15px;
+            opacity: 90%;
+            margin-left: 80px;
+            color: rgb(0, 0, 0);
+            padding-top: 15px;
+        }
+        .teks_radio_ya{
+            font-size: 15px;
+            color: rgb(0, 0, 0);
+            padding: 5px 0px;
+            text-shadow:2px 2px 1px 1px rgb(189, 189, 189);
+        }
+        .submit{
+            background-color: rgb(19, 205, 19);
+            border-radius: 100px;
+            padding: 6px 40px;
+            display: flex;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .reset{
+            background-color: rgb(255, 47, 0);
+            border-radius: 10px;
+            padding: 3px 6px;
+            display: flex;
+            font-weight: bold;
+        }
+        .teks_submit{
+            font-size: 25px;
+            opacity: 90%;
+            margin-left: 75px;
+            color: rgb(0, 0, 0);
+            padding: 5px;
+        }
+        .lego{
+            float: right;
+            width: 400px;
+            height: 233px;
+            border-radius: 50px;
+            margin-right: 100px;
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row-reverse;
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+    <h4 class="kontak" style="color:white ;">
+        <a href="About_me.html" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAAAXNSR0IArs4c6QAAA85JREFUaEPtmf2RjEEQxp+LgAwQASJABIgAESACRIAIEAEiQASIABkQAfVTb1/19nb3zOyeP67KVG3d3u470093P/01e6JzuE7OIWb9B+28dk3SBUm/JH05a2+ehaUvS7ot6Y6kmw3Aj5LeSXov6fsxihwDGoDPJWHV1YX1H0tCkeV1CGjAPhlYdRYIoJ+tgl8FDdinDaKvkn5uPObvxc0T/L3a7ONMwE+tWdAIhQr3k1M/bVyFrx1X4T6853UjOef1RhmUbdcMaAB/SLj7Y7M6wlYXymPdS2EjXL+1eas8cwb0q8TCbyQ9Gh0+0ARjvJB0LzyHER50e0egsQY89gvuVbwmk+B6qMB7LAdloFCVr1dltBWRLAEtZgFnwv3eLtiyvdAkTYmdpQHsiwWUyAKx4nzm4Y6z0MJTBcAA31sV6Ghlgg6XZwtePlyIxJdbPMQtKI9SPjhTa1egP4dsQWBkWSKjEKBQBC6jKAEblapcjycJfFsocT1ql4FG0Df3IEFU9RTRpVWQRs5WVEMstPB5/ErM/xloLEMhsUWPgOWyFQV0MfJ70hBD+ZmQoaZO+CyQzIKVgtHTdIVU0dOVbfRA6CW6Lg7eWuDwHldWyz/bBTb74bLvVXZwjkB3fM6sR9BkRQTFCW5bq+e2oOPhVXoy4ZF/AL4bAgd3vw0e6+KEs2Ma3QnGaOmYwrqSzeFZbqVLIy5QACNwJs/Zghp83nVzMdvspMgIetXSAMlydUPtv1VuNLEsWRphKxnBwBHd5GyG2Wox5FI86LtHq02lWSDiNhOeVqRCIhQAOJb34AEL0JVW1ldk9nt6pV3eSp6uLGZjFkoPJ5FwyLAiZ5aOfKr6Di/L+mg/E9r3fmbs+uoqI+1lsAx0DMayRdyosDqZjybw2BLv5f6qlMaKRO6NARQ7slFwxe8zD8Yz04pcgY5FI5bo+P0qYHveFxmoRQD6vj0tQhXorGjYwBkDBQA2maNcDD7jOfuyCdyqXRygyyLUtZLVjEgj47uuvS5sYHZoxt2fLf6HBnGAPmhG5NDRKDVTkqMOmRfjM23PM7pCQADRXl1pjRqfyujd5I7V8XKZ30egEWqVzrvUwCzdwTkNqjtBqEYGaQvSDGiTFedB+5zg4ztc2glDeQZcQGWTfTc37nhsBTQbO7da5UMJewHOXhStnR7CIRm1wEeBZjPCsWx3dTubt+Evll/6iWPV0h4Mwigyh4AHLJnpkBvXM/l1C8vb7y3ZvbMpSrNkv7ssWTa67RhLdxTwlzujKWWWSqfP/SvQy0BWNvwHvWKtY579A3mQ7y5Q5MF/AAAAAElFTkSuQmCC"/></a>
+        <a href="https://wa.me/6281282505097?" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAAAXNSR0IArs4c6QAAA4xJREFUaEPtmIuxjEEQhc+NABEgAkSACBABIiADRIAIEAEiQASIABEgAuq7NV3V+vZMz+y/tepW7VT9tY9/HmdOn37MnOgctpNziFlH0Iey2pHpxvTN9nlR0q/2/Yek7/uyxD6Yvi7pjqS7kvjea2zgXXveb9nAFtC3JD2RxOdqg/Wnkt6sDqT/LqAx+3NJD5IFvzZJfHTvrkjiMdn4YYC/J+nLCvhV0Jj/VZABen3RzD7SLZtFQmzWbwDZPGzjp7CvgAbwB0ksTvvdwGLm1QZ4NnrZDQT465mJZkFHwMgAxpbMGgCxeRzTs45U+G/YZkAzOQxbZAAwzmfhrFqjeg+791sn5rxdkTED2k+KfgG/L8C2IRzXGMcvro52WoHG6785DcNwlIQt9qmidPAeazKvaXyo7wr02+bxrPesxVa/NrKxOD3tSB3wzMN8NNi+0bPoCHRkmd9eFo9bvDYMpVknLOFl0iVhBJroQEymvZQESN/8AvY/TuQTywTOf7oQCrEujWyZJbBhRiT0UFPQMFXU8p8EUXehBfQ2L1a9lI0bMW2DSSKWUPwcbOJamDSzyALe067egqnlZkATFbKiyIdCFttX/CZTPmo7XQJNLP7cBvZA+z493a+yTH/KAqpH2hJoH36ofXGQrHlW0CDa31rse9BZmO06ogfdY5pNxKSAzmFnS8bcmWnA/GzUVvEXmeA8F1r/HnD64bhV4e99ZUkerA9bBqTKnD6m21gqNovZvkqsTi34khVn1CBn5DYCU4aeIPII3MIXusfk8fyYpWpvYYozsvCZNgLt0/Rs0ohSqaJHXL/KwqfzzdYe9E1NlaCCLdi1GrkHPHNwKkpjt3sgqLTqnWI128E61srAk4gIo16vnuWuNCqmee8rvZn+GaswTwg1TRNd4pGKPrBs5cKw8KqY9lkPdkaXMZV+e+/jcW6UF0pN08E7Y5qddkXaxsU7FIoziBlm1YppX55urZXj/iLDvM9K4KWQR+esPEXn1Nl2XsRBV9M2BRFW9Hco/N587xHPbCQb/ssCPosBfnQPgtk5BAPOz4EksgNzV3kjefgKbkW6lrr5tHs8+4zzUEES6pYsNQLtawC/GFEErcMqsZbHapTZzREhSO07nSd7oH0NAEgmtyey4i8WkUBvA8yDjJhny3VaN41jTnTGArsU9YA3JwPgkvkrc1Uhrxr/X94fQR+K9iPTh2L6L99Q0y68mBkSAAAAAElFTkSuQmCC"/></a>
+        <a href="https://www.instagram.com/frgwnabim/" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAAAXNSR0IArs4c6QAAA0dJREFUaEPtmMuuDlEQhdd5AjwBZy7BC7jEVIKpSFxeAEMDwRmZYSoRDMQQA2M8AWYSicsT4AnIl1Qlddq+VPfffZI//j05OX/3rl577bVXVe0treHYWkPM2oDeq13775g+KmnfCuz+lvRxyvyxTF+TdFkSgOcaAH8q6WE2YBb0SUlPJB3KBp7w3ndJVyS9683NgL4j6XYh0Pvw26/kVrPouPAThbh3JfHN6uiBhuG3YTZAH0h61WMj+Xy/pHMWM56PUy3Ge6C/BWaemZ6TeEa9Bnh0fdZmIZXtWoQW6OuS7ttEGIb1OcdpScclfZb0QhLAAeuM37Ad+OebLdAfgks0t2vCSq5KemzzvkhCx89tJznwDFzlWCl2C/Qfm4CfwsLYwYGDudLYkXQrPLgn6aZJEUn6KOKrgY4HMCsNQOIy/I1SwsJgDR/2RVwwZh3cGUlv7B+cyCVS3OG5QKN/ALd2BDBYmSeRi5IOS/oq6VFgl0W6FU4G3fNN7M9PfUZCvH++8eLioKPDgOOTscmHYRbmkQoMHwlAq85g/rwY02gXh3FJ9HwcH74UdIszlA5qZLq4yxlN1+QRQcBwpojiQDrjaJudGo7JoGO9UQMdg6PRTGonZb80lDVXmgw6Wl4NtPs4GHrlgLOJlH52fHgx0Oi5mwQqDhEXS30x1PVioMGzdkwDei01Hd2jWtwMJDLWPYp+vorloWtAeJ3AImiXaiMukiIMi+z59CJpfJgRWQR2iZ15RiS78Vv08cUzYi0JOKNja4/X1mLVdmSW2iNTmsI4bLbuQZAE79BjtsZk0GwldQUjA5r30DjgmRu7bOYjG8DWmoK4CJKP1zOjNB19GG0e6LBTetzqXGrhUkmrlX6jPWVriwlr2zWF2yvvEatFWLYbb7b0qyK1+UiC0sClUW0+WqCZDNsHLSg+i1Uhl7kH36L6897yh52N4rd61dnwhgnGOWzY1hwDsLRqHNLYXzbl2AMNsNpd3vCikF1p7QKuMmx8SxdAvQ4oXQcTHHm4VOZgeRgDH+cgdpuJDNMeHJaQBt1HbFJXXQD6hRAkkjovY0BHcCzAa4nStvcW4tLijGQSzq54U0H3QC36fAN6UXpD8A3Te8X0X3EX1i4wsidYAAAAAElFTkSuQmCC"/></a>
+    </h4>
+
+    <h1 class="judul_utama">Pendaftaran Event Pameran Lego</h1>
+    </header>
+    
+    <hr align="center" size="3" width="90%" color="black">
+
+    <img class="lego" src="images/lego.jpeg" alt="">
+    <img class="lego" src="images/lego2.jpg" alt="">
+
+    <form action="Selesai.php" method="post">
+        <div class="teks"><strong>Nama</strong></div>
+        <div class="label"><input class="label_dalam" type="text" name="nama" id="nama" placeholder="Masukkan Nama Anda..."></div>
+
+        <div class="teks"><strong>Email</strong></div>
+        <div class="label"><input class="label_dalam" type="email" name="email" id="email" placeholder="example@gmail.com"></div>
+
+        <div class="teks"><strong>Password</strong></div>
+        <div class="label"><input class="label_dalam" type="password" name="password" id="password" placeholder="**********" minlength="8"></div>
+
+        <div class="teks"><strong>Jenis Kelamin</strong></div>
+        <div class="label">
+            <select class="label_dalam" name="jk" id="jk">
+                <option value="#">Jenis Kelamin</option>
+                <option value="Laki-Laki">Laki-laki</option>
+                <option value="Perempuan">Perempuan</option>
+            </select></div>
+
+        <div class="umur"><strong>Apakah anda berusia 17 tahun ke atas?</strong></div>
+        <div class="label">
+            <div class="teks_radio_ya"><input class="label_dalam" type="radio" name="ya" id="ya">YA</div>
+        </div>
+
+        <div class="teks_submit"><input class="submit" type="submit" value="submit"></div>
+        <div class="teks_submit"><input class="reset" type="reset" value="reset"></div>
+    </form>
+</body>
+</html>
